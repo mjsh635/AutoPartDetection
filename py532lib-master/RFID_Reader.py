@@ -1,1 +1,0 @@
-/home/pi/qwd.py
