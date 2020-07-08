@@ -22,13 +22,11 @@ def _Enable_Bus_Branch(list_of_branches,branch_num):
     """ Enable the specified branch number and disable other
     branches as only one should be active at a time
 
-    Parameters:
-    list_of_branches (list(int)): list of branch BCM pins
-    branch_num (int): branch to be enabled
-
-    Return: none
-
+    :param list_of_branches: (list(ints)) list of branch BCM pins
+    :param branch_num: (int) branch to be enabled
+    :Return: none
     """
+
     # disable all branches
     pin_to_disable = []
     for pin in range(len(list_of_branches)):
@@ -42,12 +40,9 @@ def _Enable_Bus_Branch(list_of_branches,branch_num):
 def _Disable_Bus_Branch(list_of_branches,branch_num):
     """ Disable the specified branch number
 
-    Parameters:
-    list_of_branches (list(int)): list of branch BCM pins
-    branch_num (int): branch to be disabled
-    branch_num (list(int)): list of branches to be disabled
-
-    Return: none
+    :param list_of_branches: (list(ints)) list of branch BCM pins
+    :param branch_num: (int)/(list(int)) branch to be disabled
+    :Return: none
 
     """
 
