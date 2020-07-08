@@ -1,0 +1,10 @@
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\bin\Debug\Auto_Part_Detection_Debug_App.exe.config
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\bin\Debug\Auto_Part_Detection_Debug_App.exe
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\bin\Debug\Auto_Part_Detection_Debug_App.pdb
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\obj\Debug\Auto_Part_Detection_Debug_App.csprojAssemblyReference.cache
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\obj\Debug\Auto_Part_Detection_Debug_App.Properties.Resources.resources
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\obj\Debug\Auto_Part_Detection_Debug_App.csproj.GenerateResource.cache
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\obj\Debug\Auto_Part_Detection_Debug_App.csproj.CoreCompileInputs.cache
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\obj\Debug\Auto_Part_Detection_Debug_App.exe
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\obj\Debug\Auto_Part_Detection_Debug_App.pdb
+C:\Users\mjsh6\Documents\Auto_Detect\C# code\Auto_Part_Detection_Debug_App\obj\Debug\Auto_Part_Detection_Debug_App.ButtonControls.resources
