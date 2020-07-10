@@ -8,6 +8,14 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Net;
+using System.Net.Sockets;
+using System.Text.Json;
+using System.Net.Http;
+using Grpc.Core;
+
+
 
 namespace Auto_Part_Detection_Debug_App
 {
@@ -17,10 +25,15 @@ namespace Auto_Part_Detection_Debug_App
     {
         object selected_val;
         ButtonControls bctrl = new ButtonControls();
+        
+        
+
+        
         public Form1()
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
+            
             
         }
 
@@ -28,7 +41,13 @@ namespace Auto_Part_Detection_Debug_App
         {
             selected_val = comboBox1.SelectedItem;
             dock1TB.Text = string.Format("read_From Specific: {0}", selected_val);
-            bctrl.Read_dock(comboBox1.SelectedIndex+1);
+
+            Channel channel = new Channel("127.0.0.1:50053", ChannelCredentials.Insecure);
+            var client = new AutoPartDetection.AutoPartDetectionClient(channel);
+            var list_of_tags_request = new Get_List_of_Tags_Request();
+            list_of_tags_request.Age = 16;
+            Console.WriteLine(client.Get_List_of_Tags(list_of_tags_request));
+            /*bctrl.Read_dock(comboBox1.SelectedIndex+1);*/
         }
 
         private void ReadAllTags_Click(object sender, EventArgs e)
@@ -58,7 +77,13 @@ namespace Auto_Part_Detection_Debug_App
 
         public void Read_dock(int n)
         {
-            Console.WriteLine("reading dock" + n);
+           
         }
     }
+
+    
+
+    // YOUR CODE GOES HERE
+
+
 }

@@ -1,0 +1,2 @@
+obj\Debug/AutoPartDetect.cs \
+obj\Debug/AutoPartDetectGrpc.cs: ../../GRPCServerCllient/AutoPartDetect.proto
