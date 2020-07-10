@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-AutoPartDetect",
+      "appliesTo": "GRPCServerCllient/AutoPartDetect.proto",
+      "type": "launch"
+    }
+  ]
+}

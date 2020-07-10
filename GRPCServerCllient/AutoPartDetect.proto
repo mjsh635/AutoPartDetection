@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+service AutoPartDetection {
+
+    rpc Get_List_of_Tags (Get_List_of_Tags_Request) returns (Get_List_of_Tags_Response);
+
+    rpc Get_Tag_Data (Get_Tag_Data_Request) returns (Get_Tag_Data_Response);
+
+    rpc Get_Specific_Tag_Data (Get_Specific_Tag_Data_Request) returns (Get_Specific_Tag_Data_Response);
+    
+}
+
+message Get_List_of_Tags_Request {
+    int64 age = 1;
+  }
+  
+ 
+  message Get_List_of_Tags_Response {
+    map<string, double> person = 1;
+  }
+
+  message Get_Tag_Data_Request {
+    string name = 1;
+  }
+  
+ 
+  message Get_Tag_Data_Response {
+    string message = 1;
+  }
+
+  message Get_Specific_Tag_Data_Request {
+    string message = 1;
+  }
+
+  message Get_Specific_Tag_Data_Response {
+    string name = 1;
+  }
+  
+  message Device {
+    string deviceName = 1;
+    int64 deviceId = 2;
+    DeviceData data = 3;
+  }
+
+  message DeviceData {
+    int64 timesUsed = 1;
+    string qualityData = 2;
+  }
