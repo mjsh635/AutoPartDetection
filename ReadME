@@ -1,1 +1,1 @@
-Start of Readme
+The intentions behind this project was to develop an embedded chip which will be able to hold all configuration/specifications/information about optics used in equipment developed by a previous employer. The project included the initial developments of packages that will handler read/write transfers with the developed chip.
